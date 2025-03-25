@@ -1,0 +1,61 @@
+Lab 7 adds to Lab 6.
+Instructions:
+Info will be saved to and retrieved from a file
+Functions and commands for 1-4 remain the same.
+– Command 0 saves info to a file before quitting, then quits
+
+Requirements:
+Data remains the same
+List will start with info from the file
+– Before interacting with the user
+	• read_file: if file is there, read from file and add info to the list, at the tail
+– Before quitting
+	• save_file: save list to file
+
+The File will be saved as follows:
+– Panda 14 30
+– Snake 15 00
+– Birds 16 00
+
+New functions
+– read_file
+	• read into a local node
+– save_file
+– insert_tail
+
+The name of the file is an argument for the
+program
+– Example:
+	# ./lab7 file_name
+	or
+	# ./a.out file_name
+
+The name of the file is the first argument for the
+program
+– In the code:
+	int main (int argc, char *argv[])
+	{
+	. . .
+	if (argc == 1)
+	{
+	printf (“The name of the file is missing!\n”);
+	return 1;
+	}
+	read_file (argv[1]);
+	. . .
+
+The name of the file is an argument for the program
+– In the code:
+	• argc gives the number of arguments
+	• argv is an array of strings, each of which is one of the arguments for the program
+	• argv[0] is the name of the executable
+	• argv[1] – argv[argc – 1] are the arguments
+
+Split your code into 4 files
+– lab7.h
+– main.c
+– list.c
+– file.c
+Change the makefile
+– Compile the files together
+– The executable needs an argument

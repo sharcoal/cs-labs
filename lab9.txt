@@ -1,0 +1,58 @@
+Lab 9 adds to Lab 8.
+Instructions:
+Include an auto-saving thread to save the info from the list to a binary file every 15 seconds.
+
+Your thread is in a forever loop.
+– It sleeps for 15 seconds
+– When it wakes up, it opens the file and traverses the list, writing the node to the file.
+– Then closes the files and sleeps again.
+– Autosaver
+	• Thread that saves the data to a binary file every 15 seconds
+– Name of binary file also an argument to the program, argv[2]
+
+Functionality changes (commands 1-5 remain the same):
+NEW FUNCTION 6:
+	• shows the contents of the binary file
+UPDATED FUNCTION 0:
+	• Before deleting the nodes, cancel the thread
+
+Requirements:
+Functions to deal with the binary file in file.c
+Read from binary file
+• Receive file name as an argument
+• Read nodes and show the contents on the screen
+Save to binary file
+• Launched as a thread
+After reading the text file
+• Loops forever
+Sleeps for 15 seconds and saves the data to the file
+Opens file, writes nodes, closes file
+
+The name of both files are arguments for the
+program
+– In the code:
+	int main (int argc, char *argv[])
+	{
+	. . .
+	if (argc < 3)
+	{
+	printf (“missing arguments\n”);
+	return 1;
+	}
+
+	read_file (argv[1]);
+
+	create mutex lock
+	create thread, argument argv[2]
+
+	. . .
+
+The main thread and the autosaver thread share
+– The linked list
+– The binary file
+Need to protect them with a lock
+– Since they are both used by the saving function, we will use one lock
+
+In lab9.h: two more includes
+	For sleep: #include <unistd.h>
+	For the threads: #include <pthread.h>

@@ -1,0 +1,16 @@
+Lab 8 adds to Lab 7.
+Instructions:
+Commands in lab 7 remain the same for 1-4:
+NEW FUNCTION 5
+	– Show the list backwards, recursively
+UPDATE FUNCTION 0
+	– Save info to a file before quitting
+	– NEW: Delete all the nodes recursively
+	– Quit
+
+Requirements:
+New recursive functions
+– delete_all
+– show_backwards
+New functions will be placed in the list.c file
+
