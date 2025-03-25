@@ -1,0 +1,35 @@
+Lab 5 adds to Lab 4.
+Instructions:
+Add Feeding Time:
+– Use a union to add extra info to each entry
+– Info about the feeding depends on a flag
+	• location == 0 -- cage coordinates
+	• location == 1 -- place, such as birdcage
+Requirements:
+Functions/Commands remain the same, except for 1:
+– 1 <animal> <hour> <minutes><0 or 1><cage coordinates or place>
+	• Same as lab 4, but add extra info
+
+**Functions insert and showall need to change to include the union
+**Function change may need to change depending on how you are dealing with the members
+
+Input format
+– lemur 14 00 1 forest
+– panda 15 00 0 3 4
+– tiger 16 00 0 5 6
+– birds 17 00 1 aviary
+– snake 18 00 1 snakepit
+Output format
+– lemur 14:00 forest
+– panda 15:00 cage: 3,4
+– tiger 16:00 cage: 5,6
+– birds 17:00 aviary
+– snake 18:00 snakepit
+
+Global variables
+– 1 array of structs
+	• Declare the union
+– Cage coordinates: 2 int array
+– Place: string
+	• Add the location flag and union to the struct
+– counter

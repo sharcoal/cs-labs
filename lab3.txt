@@ -1,0 +1,15 @@
+Lab 3 adds to Lab 2.
+Functions are the same, but add option 4:
+	4 <animal> <hour> <minutes>
+	• Change the time for the animal specified
+Add 1 new function:
+– change
+Requirements:
+After changing the hour/minutes...
+– If the time decreases, move the entry up
+– If the time increases, move the entry down
+Suggestions
+– Extract and reinsert
+– Shift info up or down
+
+

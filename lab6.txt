@@ -1,0 +1,25 @@
+Lab 6 adds to Lab 4.
+Instructions: 
+Feeding Time
+– Use a doubly-linked list to keep the table
+
+Functions remain the same as Lab 4 (1, 2, 3, 4, 0)
+
+Requirements:
+Data
+– 1 doubly-linked list
+	• Nodes have 2 pointers: next and prev
+– Global variables: head and tail
+– No counter!
+
+All the functions need to change
+The list needs to be updated when
+– Inserting
+– Deleting
+– Changing
+Suggestions for changing
+– Extract and reinsert at the right spot
+– Move up or down, changing pointers
+– Move up or down, swapping nodes' contents
+
+

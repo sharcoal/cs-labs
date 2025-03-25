@@ -1,0 +1,32 @@
+Instructions: 
+Create a program to manage a zoo feeding schedule
+Requirements: 
+The list is created interactively with the following commands:
+	1 <animal> <hour> <minutes>
+	• Insert entry
+	2 <animal>
+	• Delete entry
+	3
+	• Show the list
+	0
+	• Quits
+Global variables:
+2 arrays with 10 entries
+• 1 string array for the animals (10x20)
+• 1 int array for the hour and minutes (10x2)
+Counter
+• The counter contains the number of animals in the array
+• main function: loop forever accepting commands
+Use 3 functions:
+– insert
+– delete
+– showall
+Table should stay sorted by time
+– Hour and minutes
+There should be no repetitions
+When adding a new animal
+– Find the spot and move entries down to open a space
+When deleting an animal
+– Find the animal and move entries up to close the space
+When showing the list
+– Use the following format: %s\t%d:%02d

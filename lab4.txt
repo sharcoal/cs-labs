@@ -1,0 +1,16 @@
+Lab 4 adds to Lab 3. 
+**Everything is the same; the only change is using structs this time.
+Requirements:
+Type: struct
+– char string for the animal name
+– int array (size 2) for the time and minutes
+
+Global variables:
+– 1 struct array with 10 entries
+– counter
+  • The counter shows the number of animals in the array
+
+Use a pointer to traverse the array in the following
+function
+– showall
+You may use pointers in more functions
