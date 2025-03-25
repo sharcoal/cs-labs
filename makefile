@@ -18,3 +18,6 @@ lab5: lab5.c
 	gcc -o lab5 lab5.c
 	./lab5
 
+lab6: lab6.c
+	gcc -o lab6 lab6.c
+	./lab6
